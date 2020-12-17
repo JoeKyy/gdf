@@ -3,57 +3,6 @@
     VENDORS
 \*------------------------------------*/
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
-.slick-slide button {
-  outline: none; }
-  .slick-slide button.slick-arrow {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    bottom: 0;
-    background: inherit;
-    text-rendering: auto;
-    font-size: 0;
-    border: 0;
-    cursor: pointer; }
-    .slick-slide button.slick-arrow.slick-prev {
-      position: absolute;
-      left: 0;
-      margin: auto auto auto -8px; }
-      .slick-slide button.slick-arrow.slick-prev:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        margin: auto 0 auto auto;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid #ffffff; }
-    .slick-slide button.slick-arrow.slick-next {
-      position: absolute;
-      right: 0;
-      margin: auto -8px auto auto; }
-      .slick-slide button.slick-arrow.slick-next:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        margin: auto auto auto 0;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-left: 10px solid #ffffff; }
-
-.slick-track {
-  display: flex;
-  align-items: center; }
-
 /*------------------------------------*\
     RESET
 \*------------------------------------*/
@@ -127,32 +76,32 @@ td {
     TYPOGRAPHY
 \*------------------------------------*/
 h2 {
-  font-family: Montserrat;
-  font-weight: 700; }
+  font-family: "Open Sans";
+  font-weight: 900; }
 
 h3 {
-  font-family: Montserrat;
-  font-weight: 700;
+  font-family: "Open Sans";
+  font-weight: 900;
   font-size: 2rem; }
 
 h4 {
-  font-family: Montserrat;
-  font-weight: 700;
+  font-family: "Open Sans";
+  font-weight: 900;
   font-size: 1.5rem; }
 
 h5 {
-  font-family: Montserrat;
-  font-weight: 700;
+  font-family: "Open Sans";
+  font-weight: 900;
   font-size: 1rem; }
 
 h6 {
-  font-family: Montserrat;
-  font-weight: 700;
+  font-family: "Open Sans";
+  font-weight: 900;
   font-size: 0.875rem; }
 
 p {
-  font-family: Montserrat;
-  font-weight: 700;
+  font-family: "Open Sans";
+  font-weight: 900;
   font-size: 0.875rem;
   color: #0061AE; }
 
@@ -166,14 +115,14 @@ em {
   font-style: italic; }
 
 strong {
-  font-family: Montserrat;
-  font-weight: 700; }
+  font-family: "Open Sans";
+  font-weight: 900; }
 
 /*------------------------------------*\
     FORM
 \*------------------------------------*/
 label {
-  font-family: Montserrat;
+  font-family: "Open Sans";
   font-weight: 700;
   color: #0098D6;
   text-transform: capitalize; }
@@ -191,7 +140,7 @@ input {
 a.btn,
 [type="submit"].btn,
 button.btn {
-  font-family: Montserrat;
+  font-family: "Open Sans";
   font-weight: 700;
   height: 50px;
   padding: 8px 32px;
@@ -248,44 +197,64 @@ button.btn {
 /*------------------------------------*\
     HEADER
 \*------------------------------------*/
-header nav.nav-menu--open {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99998;
-  display: inherit;
-  width: 100%;
-  height: 100vh;
-  background-color: #ffffff; }
-
-header nav.nav-menu--close {
-  position: fixed;
-  top: -1000vh;
-  left: 0;
-  z-index: 99998;
-  display: inherit;
-  width: 100%;
-  height: 100vh;
-  background-color: #ffffff; }
-
-header .nav-button {
-  position: relative;
-  z-index: 99999;
-  padding: 8px;
-  background-color: #ffffff; }
-  header .nav-button .hamburger-inner,
-  header .nav-button .hamburger-inner::before,
-  header .nav-button .hamburger-inner::after,
-  header .nav-button.is-active .hamburger-inner,
-  header .nav-button.is-active .hamburger-inner::before,
-  header .nav-button.is-active .hamburger-inner::after {
-    background-color: #F8B904; }
+header {
+  position: absolute;
+  z-index: 3;
+  width: 100%; }
+  header h1 {
+    content: '';
+    display: inline-block;
+    background-image: url("../images/sprite.png");
+    background-position: 0px 0px;
+    width: 135px;
+    height: 73px;
+    overflow: hidden;
+    text-indent: -9999px;
+    position: relative;
+    overflow: inherit;
+    font-size: 0; }
+    header h1 a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  header nav.nav-menu--open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+    display: inherit;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff; }
+  header nav.nav-menu--close {
+    position: fixed;
+    top: -1000vh;
+    left: 0;
+    z-index: 99998;
+    display: inherit;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff; }
+  header .nav-button {
+    position: relative;
+    z-index: 99999;
+    padding: 8px;
+    background-color: #ffffff; }
+    header .nav-button .hamburger-inner,
+    header .nav-button .hamburger-inner::before,
+    header .nav-button .hamburger-inner::after,
+    header .nav-button.is-active .hamburger-inner,
+    header .nav-button.is-active .hamburger-inner::before,
+    header .nav-button.is-active .hamburger-inner::after {
+      background-color: #F8B904; }
 
 /*------------------------------------*\
     BODY
 \*------------------------------------*/
 html {
-  font-family: Montserrat, Tahoma, Verdana, Segoe, sans-serif;
+  font-family: "Open Sans", Tahoma, Verdana, Segoe, sans-serif;
   font-weight: 400;
   width: 100%;
   -webkit-overflow-scrolling: touch;
@@ -297,7 +266,7 @@ html {
       overflow-x: inherit; } }
 
 body {
-  font-family: Montserrat;
+  font-family: "Open Sans";
   font-weight: 400;
   width: 100%;
   -webkit-overflow-scrolling: touch;
@@ -313,6 +282,50 @@ body {
 /*------------------------------------*\
     SECTION
 \*------------------------------------*/
+section.highlight {
+  position: relative;
+  overflow: hidden;
+  margin: -8px 0; }
+  section.highlight .container-fluid {
+    padding: 0; }
+  section.highlight figure {
+    position: relative; }
+    section.highlight figure img {
+      width: 100%; }
+    section.highlight figure figcaption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto auto 0;
+      width: 70%;
+      height: 350px; }
+      @media (min-width: 75em) {
+        section.highlight figure figcaption {
+          left: -350px;
+          width: 30%;
+          margin: auto; } }
+      section.highlight figure figcaption h2 {
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1;
+        color: #ffffff; }
+        @media (min-width: 75em) {
+          section.highlight figure figcaption h2 {
+            font-size: 4.5rem; } }
+        section.highlight figure figcaption h2 + p {
+          font-family: "Open Sans";
+          font-weight: 400;
+          margin: 48px 0;
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #ffffff; }
+          @media (min-width: 75em) {
+            section.highlight figure figcaption h2 + p {
+              font-size: 1.3rem; } }
+
 section.numbers, section.live, section.news {
   position: relative;
   min-height: 400px;
@@ -335,6 +348,116 @@ section.numbers, section.live, section.news {
       margin: 24px 0 56px;
       font-size: 1rem;
       color: #74D7FF; }
+
+section.numbers img {
+  border-radius: 8px; }
+
+section.numbers .numbers--highlight {
+  position: relative;
+  z-index: 1;
+  padding: 32px;
+  background-color: #DEE9EE;
+  border-radius: 8px;
+  box-shadow: -19px 20px 20px 9px #0000002b; }
+  section.numbers .numbers--highlight p {
+    font-family: "Open Sans";
+    font-weight: 900;
+    font-size: 2rem;
+    color: #0061AE; }
+    @media (min-width: 75em) {
+      section.numbers .numbers--highlight p {
+        font-size: 4.5rem; } }
+    section.numbers .numbers--highlight p strong {
+      display: block;
+      margin: 0 0 0 48px;
+      font-size: 0.875rem;
+      line-height: 1; }
+      @media (min-width: 75em) {
+        section.numbers .numbers--highlight p strong {
+          font-size: 1.2rem;
+          margin: 0 0 0 140px; } }
+
+section.numbers ul {
+  margin: 56px 0 0; }
+  @media (min-width: 75em) {
+    section.numbers ul {
+      margin: 112px 0 0; } }
+  section.numbers ul li {
+    font-family: "Open Sans";
+    font-weight: 900;
+    position: relative;
+    margin: 56px 0 56px 32px;
+    padding: 0 0 0 84px;
+    font-size: 1.5rem;
+    color: #0061AE; }
+    @media (min-width: 75em) {
+      section.numbers ul li {
+        font-size: 2rem; } }
+    section.numbers ul li:nth-child(1):before {
+      content: '';
+      display: inline-block;
+      background-image: url("../images/sprite.png");
+      background-position: -135px 0px;
+      width: 71px;
+      height: 71px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto auto auto -10px; }
+    section.numbers ul li:nth-child(2):before {
+      content: '';
+      display: inline-block;
+      background-image: url("../images/sprite.png");
+      background-position: -206px -60px;
+      width: 73px;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto auto auto -10px; }
+    section.numbers ul li:nth-child(3):before {
+      content: '';
+      display: inline-block;
+      background-image: url("../images/sprite.png");
+      background-position: 0px -73px;
+      width: 96px;
+      height: 82px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto auto auto -35px; }
+    section.numbers ul li:nth-child(4):before {
+      content: '';
+      display: inline-block;
+      background-image: url("../images/sprite.png");
+      background-position: 0px -155px;
+      width: 86px;
+      height: 37px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto auto auto -20px; }
+    section.numbers ul li:nth-child(5):before {
+      content: '';
+      display: inline-block;
+      background-image: url("../images/sprite.png");
+      background-position: -206px 0px;
+      width: 75px;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto auto auto -10px; }
 
 section.live {
   padding: 24px 0 168px; }
@@ -383,8 +506,11 @@ section.updates {
   background: #0063B0;
   background: linear-gradient(90deg, #0063B0 0%, #0098D6 100%); }
   section.updates h3 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: #ffffff; }
+    @media (min-width: 75em) {
+      section.updates h3 {
+        font-size: 4.5rem; } }
   section.updates p {
     margin: 32px 0 0;
     font-size: 1rem;
@@ -467,6 +593,59 @@ label {
   @media (min-width: 75em) {
     .position-absolute {
       position: absolute !important; } }
+
+.slick-slider button {
+  outline: none; }
+  .slick-slider button.slick-arrow {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background: inherit;
+    text-rendering: auto;
+    font-size: 0;
+    border: 0;
+    cursor: pointer; }
+    .slick-slider button.slick-arrow.slick-prev {
+      position: absolute;
+      left: 0;
+      margin: auto auto auto -8px; }
+      .slick-slider button.slick-arrow.slick-prev:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        margin: auto 0 auto auto;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #ffffff; }
+    .slick-slider button.slick-arrow.slick-next {
+      position: absolute;
+      right: 0;
+      margin: auto -8px auto auto; }
+      .slick-slider button.slick-arrow.slick-next:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        margin: auto auto auto 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #ffffff; }
+
+.slick-track {
+  display: flex;
+  align-items: center; }
 
 /*------------------------------------*\
     ARTICLE

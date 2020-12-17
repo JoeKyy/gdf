@@ -1,5 +1,5 @@
 $(function () {
-	$('.highlight--slider').slick({
+	$('.highlight--content').slick({
 		dots: false,
 		arrows: true,
 		infinite: true,

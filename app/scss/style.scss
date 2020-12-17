@@ -29,11 +29,6 @@
 // @section  Generics [genericos]
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
 
-
-// slick
-
-@import "./vendors/slick/slick";
-
 /*------------------------------------*\
     RESET
 \*------------------------------------*/
@@ -101,6 +96,9 @@
 \*------------------------------------*/
 
 @import "./helpers";
+
+// slick
+@import "./vendors/slick/slick";
 
 
 /*------------------------------------*\

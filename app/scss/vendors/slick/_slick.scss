@@ -1,4 +1,4 @@
-.slick-slide {
+.slick-slider {
     button {
         outline: none;
 
@@ -7,6 +7,8 @@
             z-index: 10;
             top: 0;
             bottom: 0;
+            width: 30px;
+            height: 30px;
             background: inherit;
             text-rendering: auto;
             font-size: 0;
