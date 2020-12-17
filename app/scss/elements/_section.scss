@@ -1,2 +1,120 @@
 section {
+    &.numbers,
+    &.live,
+    &.news {
+        position: relative;
+
+        min-height: 400px;
+        padding: space(m) 0 space(xg);
+
+        background: color(light, lighter);
+
+        &:before {
+            @include generated-content(100%, 250px);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background: color(primary, darker);
+            background: linear-gradient(90deg, color(primary, darker) 0%, color(primary, lighter) 100%);
+        }
+
+        h3 {
+            margin: space(g) 0 space(p);
+
+            color: color(light);
+
+            + p {
+                margin: space(m) 0 space(xg);
+    
+                font-size: font-size(medium);
+                color: color(primary, lighten);
+            }
+        }
+    }
+
+    &.live {
+        padding: space(m)  0 space(xg) * 3;
+
+        .live--content {
+            position: relative;
+
+            border-radius: 8px;
+
+            &:before {
+                @include generated-content(90%, 100%);
+                
+                position: absolute;
+                top: space(xg) * 1.5;
+                left: space(xg) * 1.5;
+
+                border: 2px solid color(primary, darken);
+                border-radius: 8px;
+            }
+            &:after {
+                @include generated-content(90%, 100%);
+                
+                position: absolute;
+                top: space(g);
+                right: space(xg) * 2.5;
+
+                border: 2px solid color(primary, lighter);
+                border-radius: 8px;
+            }
+
+            img {
+                position: relative;
+                z-index: 2;
+
+                border-radius: 8px;
+            }
+        }
+    }
+
+    &.news {
+        .news--content {
+            margin: 0 0 space(g);
+            img {
+                width: 100%;
+                margin: 0 0 (- space(base));
+
+                border-radius: 8px;
+            }
+
+            div {
+                padding: space(g);
+
+                background-color: color(light);
+                border-radius: 0 0 8px 8px;
+            }
+        }
+    }
+
+    &.updates {
+        margin: 0 0 (- space(xg) * 2);
+        padding: space(xg) 0 0;
+
+        background: color(primary, darker);
+        background: linear-gradient(90deg, color(primary, darker) 0%, color(primary, lighter) 100%);
+
+        h3 {
+            font-size: font-size(xbig);
+            color: color(light);
+        }
+
+        p {
+            margin: space(g) 0 0;
+
+            font-size: font-size(medium);
+            color: color(primary, lighten);
+        }
+
+        form { 
+            padding: space(xg) space(xg) space(gg);
+
+            background-color: color(light);
+            border-radius: 8px;
+        }
+    }
 }

@@ -1,20 +1,38 @@
 h1 {}
 
 h2 {
+    @include font(bold);
 }
 
 h3 {
+    @include font(bold);
+
+    font-size: font-size(big);
 }
 
 h4 {
+    @include font(bold);
+
+    font-size: font-size(large);
 }
 
 h5 {
+    @include font(bold);
+
+    font-size: font-size(medium);
 }
 
-h6 {}
+h6 {
+    @include font(bold);
+
+    font-size: font-size(normal);
+}
 
 p {
+    @include font(bold);
+
+    font-size: font-size(normal);
+    color: color(primary);
 }
 
 hr {}

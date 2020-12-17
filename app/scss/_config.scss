@@ -5,15 +5,19 @@
 
 $colors: (
   primary: (
+    darken: #05306B,
     darker: #0063B0,
     base: #0061AE,
     lighter: #0098D6,
+    lighten: #74D7FF,
   ),
   secondary: (
     base: #F8B904,
   ),
   light: (
     base: #ffffff,
+    lighten: #DEE9EE,
+    lighter: #EFF3F5,
   ),
   dark: (
     base: #000000,
@@ -53,10 +57,11 @@ $font-fallback: Tahoma, Verdana, Segoe, sans-serif !default;
 
 /// @group    Fontes
 $font-sizes: (
-  xxbig		  :	  64px,
-  xbig		  :	  24px,
-  big		    :	  22px,
-  large		  :	  18px,
+  xxxbig		:	  96px,
+  xxbig		  :	  94px,
+  xbig		  :	  72px,
+  big		    :	  32px,
+  large		  :	  24px,
   medium		:	  16px,
   normal		:	  14px,
   small		  :	  12px,
