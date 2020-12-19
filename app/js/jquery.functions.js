@@ -27,12 +27,12 @@ $(function () {
 	$('.nav-button').click(function(){
 		if (!$(this).hasClass('is-active')) {
 			$(this).addClass('is-active');
-			$('.nav-menu').addClass('nav-menu--open');
-			$('.nav-menu').removeClass('nav-menu--close');
+			$('.menu nav').addClass('nav-menu--open');
+			$('.menu nav').removeClass('nav-menu--close');
 		} else {
 			$(this).removeClass('is-active');
-			$('.nav-menu').removeClass('nav-menu--open');
-			$('.nav-menu').addClass('nav-menu--close');
+			$('.menu nav').removeClass('nav-menu--open');
+			$('.menu nav').addClass('nav-menu--close');
 		}
 	});
 });

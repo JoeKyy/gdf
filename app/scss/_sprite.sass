@@ -84,8 +84,8 @@ $logo: 0px 0px 0px 0px 135px 73px 281px 192px '../images/sprite.png'
   background-image: url(nth($sprite, 9))
 
 @mixin sprite($sprite)
-  content: ''
-  display: inline-block
+  display: block;
+  content: "";
   @include sprite-image($sprite)
   @include sprite-position($sprite)
   @include sprite-width($sprite)
